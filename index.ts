@@ -1,1 +1,0 @@
-export {prioritySort} from './sort/priority-sort'
