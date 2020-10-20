@@ -32,4 +32,5 @@ let objects = [
     }
 ]
 objects.sort(ps.prioritySort(['name','age','nested.properties']));
-console.log(objects)```
+console.log(objects)
+```
