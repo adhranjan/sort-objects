@@ -1,0 +1,26 @@
+{
+  "name": "sort-objects",
+  "version": "1.0.0",
+  "description": "Sort Objects based on priority",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhranjan/sort-objects.git"
+  },
+  "keywords": [
+    "sort",
+    "objects"
+  ],
+  "author": "Ranjan Adhikari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adhranjan/sort-objects/issues"
+  },
+  "homepage": "https://github.com/adhranjan/sort-objects#readme",
+  "dependencies": {
+    "dot-object": "^2.1.4"
+  }
+}
