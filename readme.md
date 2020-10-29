@@ -12,25 +12,56 @@ npm i sort-objects
 
 ## Usage
 
-```python
+```typescript
 let ps = require('sort-objects')
 
 let objects = [
     {
-        name:"test",
-        age:12,
-        nested:{
-            properties:12
+        aaa:"AAAAA",
+        bbb:1,
+        ccc:{
+            ddd:"ddd"
         }
     },
     {
-        name:"test",
-        age:12,
-        nested:{
-            properties:2
+        aaa:"ZZZ",
+        bbb:2,
+        ccc:{
+            ddd:"eee"
+        }
+    },
+    {
+        aaa:"AAAAA",
+        bbb:2,
+        ccc:{
+            ddd:"ddd"
         }
     }
+
 ]
-objects.sort(ps.prioritySort(['name','age','nested.properties']));
+```
+
+#### Ascending
+The Default is always ascending order
+```typescript
+objects.sort(ps.prioritySort(['aaa','bbb','ccc.ddd']));
 console.log(objects)
+```
+##### Sorted
+```json
+[ { aaa: 'AAAAA', bbb: 1, ccc: { ddd: 'ddd' } },
+  { aaa: 'AAAAA', bbb: 2, ccc: { ddd: 'ddd' } },
+  { aaa: 'ZZZ', bbb: 2, ccc: { ddd: 'eee' } } ]
+```
+
+#### Descending 
+```typescript
+objects.sort(ps.prioritySort(['aaa','bbb','ccc.ddd'],"desc"))
+console.log(objects)
+```
+##### Sorted
+```json
+[ { aaa: 'ZZZ', bbb: 2, ccc: { ddd: 'eee' } },
+  { aaa: 'AAAAA', bbb: 2, ccc: { ddd: 'ddd' } },
+  { aaa: 'AAAAA', bbb: 1, ccc: { ddd: 'ddd' } } ]
 ```
