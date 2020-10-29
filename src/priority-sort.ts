@@ -1,8 +1,9 @@
 import * as dot from 'dot-object'
 const compare =  (...args)=> {
     let properies = args[0]
-    let first = args[1];
-    let second = args[2];
+    let order = args[1];
+    let first = args[2];
+    let second = args[3];
     let ret = 1;        
     for(let i of properies){
         let a = dot.pick(i, first);
@@ -16,9 +17,15 @@ const compare =  (...args)=> {
         }
         break;
     }    
+    if(order === "desc"){
+        ret = -ret;
+    }
     return ret;
 }
 
-export const prioritySort = (properties:string[]) =>{
-    return compare.bind(null,properties)
+export const prioritySort = (properties:string[], order?: "asc"| "desc") =>{
+    if(!order){
+        order = "asc";
+    }
+    return compare.bind(null,properties,order)
 }
