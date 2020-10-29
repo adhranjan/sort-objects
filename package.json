@@ -1,6 +1,6 @@
 {
   "name": "sort-objects",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Sort Objects based on priority",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
