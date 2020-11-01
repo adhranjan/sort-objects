@@ -1,7 +1,7 @@
 {
   "name": "sort-objects",
-  "version": "1.1.4",
-  "description": "Sort Objects based on priority",
+  "version": "1.1.5",
+  "description": "Sort array of objects based on priority provided",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -14,7 +14,12 @@
   },
   "keywords": [
     "sort",
-    "objects"
+    "objects",
+    "array",
+    "sorted",
+    "asc",
+    "desc",
+    "Set proprity"
   ],
   "author": "Ranjan Adhikari",
   "license": "ISC",
