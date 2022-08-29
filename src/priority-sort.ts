@@ -15,12 +15,9 @@ const compare = (...args) => {
     if (i.key && i.cast) {
       a = i.cast(dot.pick(i.key, first));
       b = i.cast(dot.pick(i.key, second));
-
-      console.log("2");
     } else {
       a = dot.pick(i, first);
       b = dot.pick(i, second);
-      console.log("1");
     }
 
     if (a === b) {
